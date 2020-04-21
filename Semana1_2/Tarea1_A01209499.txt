@@ -1,0 +1,184 @@
+Fundamentos de la programación.
+Gerardo Daniel Naranjo Gallegos - A01209499.
+
+Semana 1: Introducción.
+Tarea #1: Desarrollando algoritmos.
+
+Descripción: Deberás desarrollar los algoritmos que solucionen los problemas que se presentan en la actividad.
+
+______________________________________________________________________________________________________________________________
+
+Problemas:
+
+	1.- Calcular la suma de los números pares menores o iguales a N, donde N es pedido al usuario.
+
+	R = Pasos: 	1) Inicio.
+			2) Definir tres variables (N, X y SUMA).
+			3) Pedir un número para asignarlo a una variable (N).
+			4) Asignar el valor de 0 a la segunda variable (X).
+			5) Asignar el valor de 0 a la variable "SUMA".
+			6) Iniciar ciclo:
+				6.1) Si el resultado de la división de la variable X dividida entre 2 es un número entero entonces:
+					6.1.1) Sumar el valor antiguo de SUMA más el valor de la variable X (SUMA + X).
+				     Si no se cumple la condición:
+					6.1.2) Ir al siguiente paso (Paso 6.2).
+				6.2) Sumar 1 al antiguo valor de la segunda variable (X + 1).
+				6.3) Terminar ciclo si X es igual o mayor que N (X >= N).
+			7) Mostrar el valor de la variable SUMA.
+			8) Fin.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+	2.- Dadas tres cantidades enteras positivas que representan la longitud de tres segmentos de línea, se quiere determinar las siguientes situaciones:
+	A) ¿Es un triángulo? Si los valores de dichas cantidades pueden corresponder a las longitudes de los lados de un triángulo.
+	B) ¿Es escaleno? En el caso de que las medidas puedan corresponder a las longitudes de los lados de un triángulo, si dicho triángulo es escaleno.
+	C) ¿Es equilátero? En el caso de que las medidas puedan corresponder a las longitudes de los lados de un triángulo, si dicho triángulo es equilátero.
+	D) ¿Es isósceles? En el caso de que las medidas puedan corresponder a las longitudes de los lados de un triángulo, si dicho triángulo es isósceles.
+
+	RA = Pasos: 	1) Inicio.
+			2) Definir tres variables (A, B y C).			
+			3) Pedir un número y asignarlo a la variable "A".
+			4) Pedir un número y asignarlo a la variable "B".
+			5) Pedir un número y asignarlo a la variable "C".
+			6) Si "A" más "B" es mayor que "C":
+				6.1) Entonces: Si "A" más "C" es mayor que "B":
+					6.1.1) Si "B" más "C" es mayor que "A":
+						6.1.1.1) Entonces: Mostrar "Con los números dados sí se puede formar un triángulo".
+						6.1.1.2) Sino: Ir a paso "6.2".
+				6.2) Sino: Mostrar "Con esos números dados no se puede formar un triángulo"
+			7) Fin.
+
+	RB = Pasos:	1) Inicio.
+			2) Definir tres variables (A, B y C).
+			3) Pedir un número y asignarlo a la variable "A".
+			4) Pedir un número y asignarlo a la variable "B".
+			5) Pedir un número y asignarlo a la variable "C".
+			6) Si "A" es diferente de "B" y "C":
+				6.1) Entonces: Mostrar "Es un triángulo escaleno".
+				6.2) Sino: Mostrar "No es un triángulo escaleno".
+			7) Fin.
+
+	RC = Pasos:	1) Inicio.
+			2) Definir tres variables (A, B y C).
+			3) Pedir un número y asignarlo a la variable "A".
+			4) Pedir un número y asignarlo a la variable "B".
+			5) Pedir un número y asignarlo a la variable "C".
+			6) Si "A" es igual a "B" y "C":
+				6.1) Entonces: Mostrar "Es un triángulo equilátero".
+				6.2) Sino: Mostrar "No es un triángulo equilátero".
+			7) Fin.
+
+	RD = Pasos:	1) Inicio.
+			2) Definir tres variables (A, B y C).
+			3) Pedir un número y asignarlo a la variable "A".
+			4) Pedir un número y asignarlo a la variable "B".
+			5) Pedir un número y asignarlo a la variable "C".
+			6) Si "A" es igual a "B":
+				6.1) Entonces: Mostrar "Es un triángulo isósceles".
+				6.2) Sino: Si "B" es igual a "C":
+					6.2.1) Entonces: Mostrar "Es un triángulo isósceles".
+					6.2.2) Sino: Mostrar "No es un triángulo isósceles".
+			7) Fin.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+	3.- Las fichas del dominó se pueden enumerar de forma ordenada, como se muestra en la figura proporcionada por el profesor. 
+	    Dando dos números, que corresponden a los números de una ficha (superior e inferior), determinar el número de posición asociado según la figura anterior.
+
+	R = Pasos:	1) Inicio.
+			2) Definir dos variables (A y B).
+			3) Pedir un valor y asignarlo a la variable A.
+			4) Pedir un valor y asignarlo a la variable B.
+			5) Si el valor de A es 0 y el valor de B es 0 entonces será la posición #0.
+			6) Si el valor de A es 1 y el valor de B es 1 entonces será la posición #7.
+			7) Si el valor de A es 2 y el valor de B es 2 entonces será la posición #13.
+			8) Si el valor de A es 3 y el valor de B es 3 entonces será la posición #18.
+			9) Si el valor de A es 4 y el valor de B es 4 entonces será la posición #22.
+			10) Si el valor de A es 5 y el valor de B es 5 entonces será la posición #25.			
+			11) Si el valor de A es 6 y el valor de B es 6 entonces será la posición #27.
+			12) Si el valor de A es 0:
+				12.1) Si B es igual o mayor que 1 y menor o igual que 6:
+					12.1.1) Asignar el valor de B al número de posición.
+			13) Si el valor de A es de 1:
+				13.1) Si B es igual o mayor que 2 y menor o igual que 6:
+					13.1.1) Asignar la suma de B más 6 al número de posición.
+			14) Si el valor de A es de 2:
+				14.1) Si B es igual o mayor que 3 y menor o igual que 6:
+					14.1.1) Asignar la suma de B más 11 al número de posición.
+			15) Si el valor de A es de 3:
+				15.1) Si B es igual o mayor que 4 y menor o igual que 6:
+					15.1.1) Asignar la suma de B más 15 al número de posición.
+			16) Si el valor de A es de 4:
+				16.1) Si B es igual a 5:
+					16.1.1) Asignar el valor de #23 al número de posición.
+				16.2) Si B es igual a 6:
+					16.2.1) Asignar el valor de #24 al número de posición.
+			17) Si el valor de A es de 5 y el valor de B es 6 entonces será la posición #26.
+			18) Fin.
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+	4.- Dado un número, obtener su inverso numérico. Por ejemplo, si el número es 1234, el resultado debe ser 4321.
+
+	R = Pasos:	1) Inicio.
+			2) Definir variable "N" y variable "X".
+			3) Pedir al usuario dar un número y asignarlo a N.
+			4) Si N es menor a 10 y mayor a 0:
+				4.1) Entonces: Mostrar N.
+				4.2) Sino: Ir a paso 5.
+			5) Dividir N entre 10 (obteniendo como resultado un número entero)
+ 
+------------------------------------------------------------------------------------------------------------------------------------
+
+	5.- Convertir un número de decimal a binario.
+
+	R = Pasos:	1) Inicio.
+			2) Definir variable "N".
+			3) Pedir un valor para asignarlo a la variable N.
+			4) Si N es igual a 0:
+				4.1) Entonces: Mostrar "El número en binario es: 0".
+					4.1.1) Ir a paso "10".
+				4.2) Sino: Ir a paso 5.
+			5) Si N es igual a 1:
+				5.1) Entonces: Mostrar "El número en binario es: 1".
+					5.1.1) Ir a paso "10".
+				5.2) Sino: Ir a paso 6.
+			6) Dividir N entre 2 y obtener un número entero.
+			7) Asignar el residuo entero al primer digito (unidades) del número binario.
+			8) Iniciar ciclo:
+				8.1) Dividir N entre 2 y obtener un número entero.
+				8.2) Asignar el residuo entero al siguiente digito del número binario.
+				8.3) Si la división de N entre 2 es 0:
+					8.3.1) Entonces: Ir a paso 9.
+					8.3.2) Sino: Ir a paso 8.1.
+				8.4) Fin de ciclo.
+			9) Mostrar el digito binario.
+			10) Fin.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+	6.- Determinar si un número es primo o no. Un número primo es aquel que sólo puede ser divido entre la unidad y él mismo.
+
+	R = Pasos:	1) Inicio.
+			2) Definir una variable (A).
+			3) Pedir un valor y asignarlo a la variable "A".
+			4) Si A es igual o menor a 0:
+				4.1) Entonces: Mostrar "El número dado no es un número primo".
+					4.1.1) Fin.
+				4.2) Sino: Ir a paso 5.
+			5) Si A es igual a dos:
+				5.1) Entonces: Mostrar "El número dado es un número primo".
+					4.1.1) Fin.
+				5.2) Sino: Ir a paso 6.
+			6) Si la división de A entre 2 es un número entero:
+				6.1) Entonces: "No es primo".
+				6.2) Sino: Ir a paso 7.
+			7) Si la división de A entre 3 es un número entero:
+				7.1) Entonces: "No es primo".
+				7.2) Sino: Ir a paso 8.
+			8) Si la división de A entre 5 es un número entero:
+				8.1) Entonces: "No es primo".
+				8.2) Sino: Ir a paso 9.
+			9) Mostrar "El número dado es un número primo".
+			10) Fin.
